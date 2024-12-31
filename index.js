@@ -28,7 +28,7 @@ let items = [
 ];
 
 async function getData(){
-  const result = await db.query("SELECT * FROM items;");
+  const result = await db.query("SELECT * FROM items ORDER BY id ASC;");
   return result.rows
 }
 

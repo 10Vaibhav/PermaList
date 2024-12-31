@@ -27,18 +27,12 @@ A persistent todo list application built with Express.js, PostgreSQL, and EJS te
 
 ## Installation
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/permalist.git
-cd permalist
-```
-
-2. Install dependencies:
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Set up your environment variables in `.env`:
+2. Set up your environment variables in `.env`:
 ```
 user=your_db_user
 host=your_db_host
@@ -47,7 +41,7 @@ password=your_db_password
 port=your_db_port
 ```
 
-4. Set up the database:
+3. Set up the database:
 ```sql
 CREATE TABLE items (
   id SERIAL PRIMARY KEY,
@@ -57,7 +51,7 @@ CREATE TABLE items (
 INSERT INTO items (title) VALUES ('Buy milk'), ('Finish homework');
 ```
 
-5. Start the server:
+4. Start the server:
 ```bash
 node server.js
 ```
